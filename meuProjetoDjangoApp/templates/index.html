@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Arquivo index</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"
+</head>
+<body>
+    <h3>body do index</h3>
+    {% for livro in livros%}
+        <h3>{{livro.nome}}</h3>
+        <h3>{{livro.descricao}}</h3>
+        <h3>{{livro.autor}}</h3>
+    {% endfor %}
+</body>
+</html>
